@@ -9,7 +9,7 @@ hotkey = None
 
 def write_to_txt(rank):
     with open('data.txt', 'w') as f:
-        f.write(f"{rows[rank - 1]['user']} - {rows[rank - 1]['time']}")
+        f.write(f"{len(rows) - rank + 1}. {rows[rank - 1]['user']} - {rows[rank - 1]['time']}")
 
 write_to_txt(current_rank)
 
